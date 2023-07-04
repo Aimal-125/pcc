@@ -1,0 +1,174 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.attribution { 
+	font-size: 14px; 
+	text-align: center;
+	margin-top: 1rem;
+	padding: 5px;
+	position: relative;
+	z-index: 1;
+}
+.attribution a { 
+	color: white;
+	text-decoration: none;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: hsl(185, 75%, 39%);
+	height: 100vh;
+}
+.top {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	clip-path: circle(50% at left top);
+	background: repeating-linear-gradient(rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0.05), rgba(0, 255, 255, 0.05));
+}
+.bottom {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	clip-path: circle(50% at right bottom);
+	background: linear-gradient(rgba(0, 255, 255, 0.3), rgba(0, 255, 255, 0.3), rgba(0, 255, 255, 0.3));
+}
+.card {
+	position: relative;
+	z-index: 1;
+	border-radius: 10px;
+	width: 35%;
+}
+.div1 {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.bgdiv {
+	width: 100%;
+	height: 100%;
+}
+#bgimg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.pdiv {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 50%;
+	border: 5px solid white;
+}
+.pdiv img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	clip-path: circle(50%);
+}
+.lowerdiv {
+	background: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.div2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	height: 150px;
+}
+.name {
+	position: relative;
+	top: 20px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.nspan {
+	font-weight: bold;
+	color: black;
+}
+.city {
+	position: relative;
+	top: 30px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.div3 {
+	display: flex;
+	justify-content: space-around;
+	padding: 1.5rem;
+}
+.spandiv {
+	display: flex;
+	flex-direction: column;
+}
+.bold {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3vh;
+}
+.light {
+	display: block;
+	text-align: center;
+	font-size: 2vh;
+	color: rgba(0, 0, 0, 0.7);	
+}
+@media screen and (min-width: 600px) {
+	.card {
+		width: 450px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.card {
+		width: 35%;
+	}
+	.div1 {
+		height: 300px;
+	}
+	.pdiv {
+		width: 300px;
+		height: 300px;
+	}
+	.div2 {
+		height: 500px;
+	}
+	.name {
+		font-size: 50px;
+	}
+	.city {
+		font-size: 30px;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	.card {
+		width: 90%;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	body {
+		position: relative;
+	}
+	.container {
+		height: 130vh;
+	}
+	.card {
+		width: 375px;
+	}
+}
