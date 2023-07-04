@@ -18,6 +18,9 @@
 	color: white;
 	text-decoration: none;
 }
+body {
+	position: relative;
+}
 .container {
 	display: flex;
 	flex-direction: column;
