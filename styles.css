@@ -169,9 +169,14 @@ body {
 		position: relative;
 	}
 	.container {
-		height: 130vh;
+		height: 200vh;
 	}
 	.card {
 		width: 375px;
+	}
+}
+@media screen and (orientation: landscape) {
+	.container {
+		height: 150vh;
 	}
 }
