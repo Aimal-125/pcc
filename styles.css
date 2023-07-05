@@ -131,7 +131,7 @@ body {
 	font-size: 2vh;
 	color: rgba(0, 0, 0, 0.7);	
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
 	.card {
 		width: 450px;
 	}
@@ -139,6 +139,21 @@ body {
 @media screen and (min-width: 1400px) {
 	.card {
 		width: 35%;
+	}
+	.div1 {
+		height: 200px;
+	}
+	.pdiv {
+		width: 200px;
+		height: 200px;
+	}
+	.div2 {
+		height: 200px;
+	} 
+}
+@media screen and (min-width: 2000px) {
+	.card {
+		width: 40%;
 	}
 	.div1 {
 		height: 300px;
@@ -150,14 +165,22 @@ body {
 	.div2 {
 		height: 500px;
 	}
-	.name {
-		font-size: 50px;
-	}
-	.city {
-		font-size: 30px;
-	}
 }
-
+@media screen and (min-height: 1400px) {
+	.card {
+		width: 40%;
+	}
+	.div1 {
+		height: 300px;
+	}
+	.pdiv {
+		width: 300px;
+		height: 300px;
+	}
+	.div2 {
+		height: 500px;
+	}	
+}
 @media screen and (orientation: portrait) {
 	.card {
 		width: 90%;
@@ -174,9 +197,4 @@ body {
 	.card {
 		width: 375px;
 	}
-}
-@media screen and (orientation: landscape) {
-	.container {
-		height: 150vh;
-	}
-}
+} 
